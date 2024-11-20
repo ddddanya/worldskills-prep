@@ -144,3 +144,65 @@ h1, h2, h3, p {
     object-fit: cover;
     border-radius: 12px;
 }
+
+@media (max-width: 1024px) {
+    .background .darken {
+        background: rgba(0, 0, 0, 0.8);
+    }
+    .background .image {
+        background: url('./assets/images/concert/anthony-delanoix-hzgs56Ze49s-unsplash.jpg');
+        background-size: cover;
+        background-position: center;
+        width: 100vw;
+        height: 100vh;
+    }
+    .background video {
+        display: none;
+    }
+    .container .images {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .container h1 {
+        font-size: 48px;
+        line-height: 52px;
+    }
+
+    .container .info {
+        width: 80%;
+        max-width: 80%;
+        flex-direction: column;
+    }
+
+    .container .info .info-block {
+        width: 100%;
+        min-width: 100%;
+        margin-bottom: 12px;
+    }
+
+    .container .images {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+    .container h1 {
+        font-size: 36px;
+        line-height: 40px;
+    }
+
+    .container .info {
+        width: 100%;
+    }
+
+    .container .info .info-block {
+        width: 100%;
+        min-width: 100%;
+    }
+
+    .container .images {
+        width: 100%;
+    }
+}
